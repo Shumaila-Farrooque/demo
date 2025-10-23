@@ -1,0 +1,156 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:80% ;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(180deg,rgb(217, 142, 142)black,white);
+    color: black;
+}
+header{
+    background:violet;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    
+} */
+ /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #0f172a; /* dark blue background */
+  color: #f8fafc; /* light text */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+nav.ul{
+    .navbar ul{
+    display: flex;
+    /* flex-direction: column; */
+    list-style: none;
+    gap: 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+    
+   
+    
+}
+
+
+/* Section General Style */
+section {
+  margin: 60px 0;
+  text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #38bdf8; /* light cyan color */
+  margin-bottom: 15px;
+}
+
+h1 span {
+  color: #facc15; /* yellow for your name */
+}
+
+/* About Section */
+#about img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 15px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+#about p {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+/* Skills Section */
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-box {
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  background: #334155;
+}
+
+/* Projects Section */
+#projects .pr, #projects .project {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+#projects a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Button (if used) */
+.d {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.d:hover {
+  background: #facc15;
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about p, #projects .pr, #projects .project {
+    width: 90%;
+  }
+
+  .skill-box {
+    width: 80%;
+  }
+}
